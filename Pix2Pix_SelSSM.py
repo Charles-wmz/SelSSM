@@ -11,7 +11,7 @@ Key components:
 - Discriminator: PatchGAN discriminator with spectral normalization
 - Training utilities with gradient clipping and learning rate scheduling
 
-Author: Cai Yize
+Author: Mingzhi Wang
 Date: Nov 6, 2024
 """
 

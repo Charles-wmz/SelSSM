@@ -55,9 +55,9 @@ def simulate_missing_modality_fixed(dataset_path, output_path, fixed_missing_mod
                 original_data.fill(0)
                 np.save(missing_modality_path, original_data)
                 
-                # 判断是否为全零文件，并删除(将原本的数据设置为0，然后删除全为0的文件)
+                # Check if the file contains all zeros, and delete it (set the original data to 0, then delete the zero-filled file)
                 if np.array_equal(original_data, np.zeros_like(original_data)):
-                    os.remove(missing_modality_path)  # 删除全零的 `.npy` 文件
+                    os.remove(missing_modality_path)  # Delete the all-zero `.npy` file
                     
             # Create or overwrite a metadata file to record which modality is missing
             metadata_file_path = os.path.join(output_subject_path, "missing_modality.txt")
@@ -65,14 +65,14 @@ def simulate_missing_modality_fixed(dataset_path, output_path, fixed_missing_mod
                 f.write(f"{missing_modality}\n")
 
 # Paths to the original preprocessed dataset
-dataset_path = r"D:\Project\dataset\BraTS_2019_entire_DP155_80"
-output_base_path = r"D:\Project\dataset\BraTS_2019_entire_DP155_80_SMt2"  # Output directory for modified dataset
+dataset_path = "../dataset/BraTS_2020_entire_DP155_80"
+output_base_path = "../dataset/BraTS_2020_entire_DP155_80_SMt2"  # Output directory for modified dataset
 # Simulate missing modality for each split (train, val, test)
 fixed_missing_modality = 't2.npy'  # Specify the fixed missing modality here (e.g., 't1.npy', 't1ce.npy', 't2.npy', 'flair.npy')
 
 for split in ['train', 'val', 'test']:
-    print(f"正在处理{fixed_missing_modality}模态{split}文件夹")
+    print(f"Processing {fixed_missing_modality} modality in {split} folder")
     split_path = os.path.join(dataset_path, split)
     output_split_path = os.path.join(output_base_path, split)
     simulate_missing_modality_fixed(split_path, output_split_path, fixed_missing_modality)
-    print(f"{fixed_missing_modality}模态模拟缺失已完成！")
+    print(f"{fixed_missing_modality} modality simulation complete!")

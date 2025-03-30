@@ -4,7 +4,7 @@ Test script for the Pix2Pix model with Selective State Space Model (SSM).
 This script evaluates the trained model on test data and computes various metrics
 including PSNR, SSIM, and MAE for image quality assessment.
 
-Author: Cai Yize
+Author: Mingzhi Wang
 Date: Nov 6, 2024
 """
 

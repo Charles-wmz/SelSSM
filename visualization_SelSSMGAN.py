@@ -7,7 +7,7 @@ This script generates visualizations of the model's outputs, including:
 - Feature maps
 - Loss curves
 
-Author: Cai Yize
+Author: Mingzhi Wang
 Date: Nov 6, 2024
 """
 
