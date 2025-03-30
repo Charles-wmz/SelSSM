@@ -110,9 +110,9 @@ If you use this project in your research, please cite:
 MIT License
 
 ## Author
-- Author: Cai Yize
-- Email: [your-email@example.com]
-- Institution: [your-institution]
+- Author: Mingzhi Wang
+- Email: [wmz@mail.dlut.edu.cn]
+- Institution: [Dalian University of Technology]
 
 ## Acknowledgments
 Thanks to all contributors who provided help and suggestions for this project. 
