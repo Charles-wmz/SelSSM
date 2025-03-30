@@ -1,7 +1,7 @@
 # SelSSM: Medical Image Synthesis with Selective State Space Model
 
 ## Project Introduction
-SelSSM is a medical image synthesis framework based on Selective State Space Model (SSM), specifically designed for multi-modal medical image synthesis tasks, particularly for the BraTS dataset. This project implements a combination of Pix2Pix architecture with Selective State Space Model for high-quality medical image generation.
+SelSSM is a medical image synthesis framework based on Selective State Space Model (SelSSM), specifically designed for multi-modal medical image synthesis tasks, particularly for the BraTS dataset. This project implements a combination of Pix2Pix architecture with Selective State Space Model for high-quality medical image generation.
 
 ## Dataset
 Before training, you need to get the data on BraTS2020 and BraTS2019 first. Please change the path in the code to your path.
